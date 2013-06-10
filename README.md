@@ -1,3 +1,3 @@
-The OpenShift `jbossas` cartridge documentation can be found at:
+Diploma project on FIT CVUT.
 
-https://github.com/openshift/origin-server/tree/master/cartridges/openshift-origin-cartridge-jbossas/README.md
+Running on http://webgephi-beziks.rhcloud.com/
