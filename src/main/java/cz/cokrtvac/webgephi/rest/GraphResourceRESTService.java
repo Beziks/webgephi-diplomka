@@ -182,7 +182,13 @@ public class GraphResourceRESTService {
         result.setXml(resXml);
         graphService.persist(result);
 
-        return GraphDetailXml.create(result);
+
+        GraphDetailXml xml = GraphDetailXml.create(result);
+        xml.setLink(req);
+        if(xml.getParent() != null){
+            xml.getParent().setLink(req);
+        }
+        return xml;
     }
 
 
