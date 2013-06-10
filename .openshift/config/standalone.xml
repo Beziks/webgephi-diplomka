@@ -140,6 +140,9 @@
                     <driver name="postgresql" module="org.postgresql.jdbc">
                         <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
                     </driver>
+					<driver name="mysql" module="com.mysql">
+                        <xa-datasource-class>com.mysql.jdbc.Driver</xa-datasource-class>
+                    </driver>
                 </drivers>
             </datasources>
         </subsystem>
