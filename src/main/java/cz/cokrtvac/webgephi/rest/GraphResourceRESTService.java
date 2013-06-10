@@ -116,6 +116,9 @@ public class GraphResourceRESTService {
         for (GraphEntity e : graphService.getAll()) {
             GraphDetailXml xml = GraphDetailXml.create(e);
             xml.setLink(req);
+            if(xml.getParent() != null){
+                xml.getParent().setLink(req);
+            }
             graphs.getGraphs().add(xml);
         }
         return graphs;
